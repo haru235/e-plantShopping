@@ -18,6 +18,10 @@ const Cart = ({ onContinueShopping, setAddedToCart }) => {
         onContinueShopping()
     };
 
+    const handleCheckoutShopping = (e) => {
+        alert('Coming soon...')
+    }
+
     const handleIncrement = (item) => {
         dispatch(updateQuantity({ ...item, quantity: item.quantity + 1 }));
     };
